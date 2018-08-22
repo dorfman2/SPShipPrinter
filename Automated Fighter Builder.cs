@@ -86,7 +86,7 @@ void Main(string argument)
   // v3 = 
 
 
-  printStep = 1;
+  int printStep = 1;
 
 // STEP 1: Retract piston to 0m, and turn off projector & Welders
   while(printStep >= 1){
@@ -109,7 +109,7 @@ void Main(string argument)
          v2.ApplyAction("OnOff_On");
 
         if(getExtraFieldFloat(v0, "Current position: (\\d+\\.?\\d*)") == 10) {
-            printStep = 3
+            printStep = 3;
         }}
 
 // STEP 3: Stop piston, & turn off welders. Break any connection.
